@@ -1,0 +1,29 @@
+{
+  "name": "learn-javascript-modules",
+  "version": "0.0.0",
+  "description": "learn module techniques in javascript using requirejs(amd), browerify(cjs) and the ES6 module syntax via babel",
+  "main": "index.js",
+  "scripts": {
+    "browserify": "browserify --debug ./src/main_cjs.js -o ./dist/bundle_browserify.js",
+    "webpack": "webpack",
+    "requirejs": "node ./node_modules/requirejs/bin/r.js -o requirejs.build-config.js"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "author": "Deepak Anand",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "browserify": "~13.1.0",
+    "webpack": "~1.13.1",
+    "lodash": "~4.15.0",
+    "babel-cli": "~6.11.4",
+    "babel-preset-es2015": "~6.13.2",
+    "babel-core": "~6.13.2",
+    "babel-loader": "~6.2.5",
+    "babel-polyfill": "~6.13.0",
+    "requirejs": "~2.3.1"
+  }
+}

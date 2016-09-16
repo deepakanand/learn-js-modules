@@ -1,0 +1,1 @@
+define("src/amd",[],function(){return{getHello:function(){return"Hello World"}}}),requirejs.config({baseUrl:"node_modules/requirejs",paths:{src:"../../src"}}),requirejs(["src/amd"],function(e){console.log(e.getHello())}),define("main_amd",function(){});

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AMD Modules using RequireJS</title>
+</head>
+<body>
+	<script data-main="./src/main_amd" src="./node_modules/requirejs/require.js"></script>
+	<!--<script type="text/javascript">
+		requirejs.config({
+		    baseUrl: 'node_modules/requirejs',
+		    paths: {
+		        src: '../../src'
+		    }
+		});
+	</script>
+	<script>
+	requirejs(['src/amd'], function(amd){
+
+		console.log(amd.getHello());
+
+	});
+	</script>-->
+	<script src="./dist/bundle_requirejs.js"></script>
+</body>
+</html>
