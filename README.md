@@ -8,9 +8,9 @@ Why do we need modules ? To structure code for readability, maintainibility and 
 
 There are many, the ones I am looking to learn about are 
 
-1.CommonJS
-2.AMD
-3.ES6 Modules
+1. CommonJS
+2. AMD
+3. ES6 Modules
 
 
 # Resources

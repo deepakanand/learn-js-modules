@@ -4,6 +4,7 @@
   "description": "learn module techniques in javascript using requirejs(amd), browerify(cjs) and the ES6 module syntax via babel",
   "main": "index.js",
   "scripts": {
+    "toes6": "babel src -d dist --source-maps",
     "browserify": "browserify --debug ./src/main_cjs.js -o ./dist/bundle_browserify.js",
     "webpack": "webpack",
     "requirejs": "node ./node_modules/requirejs/bin/r.js -o requirejs.build-config.js"
