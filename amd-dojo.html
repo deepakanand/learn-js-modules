@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AMD Modules using Dojo toolkit</title>
+</head>
+<body>
+    <script data-dojo-config = "async: true, baseUrl: '.' " src="./node_modules/dojo/dojo.js"></script>
+    <script>
+    require([
+      'src/dojo_amd',
+    ], function(dojo_amd){
+
+        document.body.textContent = dojo_amd.getHello()
+
+        console.log(dojo_amd.getHello());
+
+    });
+    </script>
+    <!--<script src="./dist/bundle_requirejs.js"></script>-->
+</body>
+</html>
